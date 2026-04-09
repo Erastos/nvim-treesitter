@@ -7,7 +7,7 @@ local api = vim.api
 
 local function complete_available_parsers(arglead)
   return vim.tbl_filter(
-    --- @param v string
+  --- @param v string
     function(v)
       return v:find(arglead) ~= nil
     end,
@@ -17,7 +17,7 @@ end
 
 local function complete_installed_parsers(arglead)
   return vim.tbl_filter(
-    --- @param v string
+  --- @param v string
     function(v)
       return v:find(arglead) ~= nil
     end,
